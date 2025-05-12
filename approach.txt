@@ -1,0 +1,30 @@
+
+Project: Carbon Footprint Estimation
+
+Tools Used:
+- Python
+- Pandas
+- Numpy
+- Scikit-learn (RandomForestRegressor)
+
+Approach:
+1. Loaded the provided train and test datasets.
+2. Performed preprocessing:
+   - One-hot encoded categorical variables ('heating_type', 'diet_type').
+   - Selected only numerical features.
+3. Trained a Random Forest Regressor model.
+4. Predicted carbon footprint for test data.
+
+Feature Engineering:
+- Encoded categorical columns.
+- Selected numeric features.
+
+Evaluation:
+- R2 Score was used to evaluate performance during validation split.
+
+Final Step:
+- Submission CSV was created in correct format: [ID, carbon_footprint].
+
+Notes:
+- RandomForestRegressor with random_state=42.
+- No missing values found in datasets.
